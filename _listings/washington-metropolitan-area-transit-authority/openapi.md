@@ -3,11 +3,11 @@ swagger: "2.0"
 x-collection-name: Washington Metropolitan Area Transit Authority
 x-complete: 1
 info:
-  title: WMATA Real-Time Bus Predictions
-  description: realtime-bus-prediction-methods
+  title: WMATA Incidents
+  description: rail-bus-and-elevator-disruptionsoutages-
   version: 1.0.0
 host: api.wmata.com
-basePath: /NextBusService.svc
+basePath: /Incidents.svc
 schemes:
 - http
 produces:
@@ -15,67 +15,92 @@ produces:
 consumes:
 - application/json
 paths:
-  /Predictions:
+  /json/BusIncidents:
     get:
-      summary: XML - Next Buses
-      description: "Description\r\n\r\nReturns next bus arrival times at a stop.\r\n\r\nResponse
-        Elements\r\n\r\n\r\n\r\n\r\nElement\r\n\r\nDescription\r\n\r\n\r\n\r\n\r\n\r\nPredictions\r\n\r\n\r\nArray
-        containing bus predictions (NextBusPrediction).\r\n\r\n\r\n\r\n\r\nStopName\r\n\r\nFull
-        name of the given StopID.\r\n\r\n\r\n\r\n\r\n\r\nNextBusPrediction Elements\r\n\r\n\r\n\r\n\r\n\r\nDirectionNum\r\n\r\nDenotes
-        a binary direction (0 or 1) of the bus. There is no\r\nspecific mapping to
-        direction, but a different value for the same\r\nroute signifies that the
-        buses are traveling in opposite\r\ndirections. Use the DirectionText element
-        to show the actual\r\ndestination of the bus.\r\n\r\n\r\n\r\nDirectionText\r\n\r\nCustomer-friendly
-        description of direction and destination for\r\na bus.\r\n\r\n\r\n\r\nMinutes\r\n\r\nMinutes
-        until bus arrival at this stop. Numeric value.\r\n\r\n\r\n\r\nRouteID\r\n\r\nBase
-        route name as shown on the bus. This can be used in other\r\nbus-related methods.
-        Note that all variants will be shown as their\r\nbase route names (i.e.: 10Av1
-        and 10Av2 will be shown as 10A).\r\n\r\n\r\n\r\nTripID\r\n\r\nTrip identifier.
-        This can be correlated with the data in our\r\nbus schedule information as
-        well as bus positions.\r\n\r\n\r\n\r\nVehicleID\r\n\r\nBus identifier. This
-        can be correlated with results returned\r\nfrom bus positions."
-      operationId: getPredictions
-      x-api-path-slug: predictions-get
+      summary: JSON - Bus Incidents
+      description: "Description\r\n\r\nReturns a set of reported bus incidents/delays
+        for a given Route. Omit the\r\nRoute to return all reported items.\r\n\r\nNote
+        that the Route parameter accepts only base route names and no\r\nvariations,
+        i.e.: use 10A instead of 10Av1 and 10Av2.\r\n\r\nBus incidents/delays are
+        refreshed once every 20 to 30 seconds approximately.\r\n\r\nResponse Elements\r\n\r\n\r\n\r\n\r\nElement\r\n\r\nDescription\r\n\r\n\r\n\r\n\r\n\r\nBusIncidents\r\n\r\n\r\nArray
+        containing bus incident information (BusIncident).\r\n\r\n\r\n\r\n\r\n\r\n\r\nBusIncident\r\nElements\r\n\r\n\r\n\r\n\r\n\r\nDateUpdated\r\n\r\nDate
+        and time (Eastern Standard Time) of last update. Will be\r\nin YYYY-MM-DDTHH:mm:ss
+        format (e.g.: 2014-10-28T08:13:03).\r\n\r\n\r\n\r\nDescription\r\n\r\nFree-text
+        description of the delay or incident.\r\n\r\n\r\n\r\nIncidentID\r\n\r\nUnique
+        identifier for an incident.\r\n\r\n\r\n\r\nIncidentType\r\n\r\nFree-text description
+        of the incident type. Usually\r\nDelay or Alert but is subject to change at
+        any time.\r\n\r\n\r\n\r\nRoutesAffected\r\n\r\nArray containing routes affected.
+        Routes listed are usually\r\nidentical to base route names (i.e.: not 10Av1
+        or 10Av2, but 10A),\r\nbut may differ from what our bus methods return."
+      operationId: 54763641281d830c946a3d75
+      x-api-path-slug: jsonbusincidents-get
       parameters:
       - in: query
-        name: StopID
-        description: 7-digit regional stop ID
+        name: Route
+        description: Base bus route; variations are not recognized (i
       responses:
         200:
           description: OK
       tags:
       - Transit
       - Buses
-      - Predictions
-  /json/jPredictions:
+      - Incidents
+  /json/Incidents:
     get:
-      summary: JSON - Next Buses
-      description: "Description\r\n\r\nReturns next bus arrival times at a stop.\r\n\r\nResponse
-        Elements\r\n\r\n\r\n\r\n\r\nElement\r\n\r\nDescription\r\n\r\n\r\n\r\n\r\n\r\nPredictions\r\n\r\n\r\nArray
-        containing bus predictions (NextBusPrediction).\r\n\r\n\r\n\r\n\r\nStopName\r\n\r\nFull
-        name of the given StopID.\r\n\r\n\r\n\r\n\r\n\r\nNextBusPrediction Elements\r\n\r\n\r\n\r\n\r\n\r\nDirectionNum\r\n\r\nDenotes
-        a binary direction (0 or 1) of the bus. There is no\r\nspecific mapping to
-        direction, but a different value for the same\r\nroute signifies that the
-        buses are traveling in opposite\r\ndirections. Use the DirectionText element
-        to show the actual\r\ndestination of the bus.\r\n\r\n\r\n\r\nDirectionText\r\n\r\nCustomer-friendly
-        description of direction and destination for\r\na bus.\r\n\r\n\r\n\r\nMinutes\r\n\r\nMinutes
-        until bus arrival at this stop. Numeric value.\r\n\r\n\r\n\r\nRouteID\r\n\r\nBase
-        route name as shown on the bus. This can be used in other\r\nbus-related methods.
-        Note that all variants will be shown as their\r\nbase route names (i.e.: 10Av1
-        and 10Av2 will be shown as 10A).\r\n\r\n\r\n\r\nTripID\r\n\r\nTrip identifier.
-        This can be correlated with the data in our\r\nbus schedule information as
-        well as bus positions.\r\n\r\n\r\n\r\nVehicleID\r\n\r\nBus identifier. This
-        can be correlated with results returned\r\nfrom bus positions."
-      operationId: getJsonJpredictions
-      x-api-path-slug: jsonjpredictions-get
-      parameters:
-      - in: query
-        name: StopID
-        description: 7-digit regional stop ID
+      summary: JSON - Rail Incidents
+      description: "Description\r\n\r\nReturns reported rail incidents (significant
+        disruptions and delays to\r\nnormal service). The data is identical to WMATA's
+        Metrorail Service Status\r\nfeed.\r\n\r\nRail incidents are refreshed once
+        every 20 to 30 seconds approximately.\r\n\r\nResponse Elements\r\n\r\n\r\n\r\n\r\nElement\r\n\r\nDescription\r\n\r\n\r\n\r\n\r\n\r\nIncidents\r\n\r\n\r\nArray
+        containing rail disruption information (Incident).\r\n\r\n\r\n\r\n\r\n\r\n\r\nIncident
+        Elements\r\n\r\n\r\n\r\n\r\n\r\nDateUpdated\r\n\r\nDate and time (Eastern
+        Standard Time) of last update. Will be\r\nin YYYY-MM-DDTHH:mm:SS format (e.g.:
+        2010-07-29T14:21:28).\r\n\r\n\r\n\r\nDelaySeverity\r\n\r\nDeprecated.\r\n\r\n\r\n\r\nDescription\r\n\r\nFree-text
+        description of the incident.\r\n\r\n\r\n\r\nEmergencyText\r\n\r\nDeprecated.\r\n\r\n\r\n\r\nEndLocationFullName\r\n\r\nDeprecated.\r\n\r\n\r\n\r\nIncidentID\r\n\r\nUnique
+        identifier for an incident.\r\n\r\n\r\n\r\nIncidentType\r\n\r\nFree-text description
+        of the incident type. Usually Delay or\r\nAlert but is subject to change at
+        any time.\r\n\r\n\r\n\r\nLinesAffected\r\n\r\nSemi-colon and space separated
+        list of line codes (e.g.:\r\nRD; or BL;\r\nOR; or BL; OR; RD;). We do\r\nplan
+        to update this to return something more reasonable like an\r\narray, but until
+        then, use code similar to the following:\r\n\r\n\"RD; GR; BL;\".split(/;[\\s]?/).filter(function(fn)
+        { return fn\r\n!== ''; })\r\n\r\n\r\n\r\nPassengerDelay\r\n\r\nDeprecated.\r\n\r\n\r\n\r\n\r\nStartLocationFullName\r\n\r\nDeprecated."
+      operationId: 54763641281d830c946a3d77
+      x-api-path-slug: jsonincidents-get
       responses:
         200:
           description: OK
       tags:
       - Transit
       - Buses
+      - Incidents
+  /BusIncidents:
+    get:
+      summary: XML - Bus Incidents
+      description: "Description\r\n\r\nReturns a set of reported bus incidents/delays
+        for a given Route. Omit the\r\nRoute to return all reported items.\r\n\r\nNote
+        that the Route parameter accepts only base route names and no\r\nvariations,
+        i.e.: use 10A instead of 10Av1 and 10Av2.\r\n\r\nBus incidents/delays are
+        refreshed once every 20 to 30 seconds approximately.\r\n\r\nResponse Elements\r\n\r\n\r\n\r\n\r\nElement\r\n\r\nDescription\r\n\r\n\r\n\r\n\r\n\r\nBusIncidents\r\n\r\n\r\nArray
+        containing bus incident information (BusIncident).\r\n\r\n\r\n\r\n\r\n\r\n\r\nBusIncident\r\nElements\r\n\r\n\r\n\r\n\r\n\r\nDateUpdated\r\n\r\nDate
+        and time (Eastern Standard Time) of last update. Will be\r\nin YYYY-MM-DDTHH:mm:ss
+        format (e.g.: 2014-10-28T08:13:03).\r\n\r\n\r\n\r\nDescription\r\n\r\nFree-text
+        description of the delay or incident.\r\n\r\n\r\n\r\nIncidentID\r\n\r\nUnique
+        identifier for an incident.\r\n\r\n\r\n\r\nIncidentType\r\n\r\nFree-text description
+        of the incident type. Usually\r\nDelay or Alert but is subject to change at
+        any time.\r\n\r\n\r\n\r\nRoutesAffected\r\n\r\nArray containing routes affected.
+        Routes listed are usually\r\nidentical to base route names (i.e.: not 10Av1
+        or 10Av2, but 10A),\r\nbut may differ from what our bus methods return."
+      operationId: 54763641281d830c946a3d78
+      x-api-path-slug: busincidents-get
+      parameters:
+      - in: query
+        name: Route
+        description: Bus route
+      responses:
+        200:
+          description: OK
+      tags:
+      - Transit
+      - Buses
+      - Incidents
 ---

@@ -1,19 +1,14 @@
 ---
 name: Washington Metropolitan Area Transit Authority
 x-slug: washington-metropolitan-area-transit-authority
-description: The collection of data offered here allows developers to create new and
-  innovative applications for the web or mobile devices. We encourage you to integrate
-  Metro data into your applications and mashups to help get people the information
-  they want about getting around. Use of our APIs and other data is free of charge,
-  you have two options, for new developers who want to try out the WMATA API but are
-  not ready for production, and you can use our demonstration key, without having
-  to register.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+description: Official feed of Metro/WMATA, not monitored 24/7. Report emergencies
+  to Transit Police at (202) 962-2121. Service updates @metrorailinfo & @metrobusinfo.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
 x-kinRank: "8"
-x-alexaRank: ""
+x-alexaRank: "24927"
 tags: Buses
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-17"
+modified: "2018-06-17"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/apis.md
 specificationVersion: "0.14"
 apis:
@@ -144,7 +139,7 @@ apis:
 
     Unique identifier for the bus. This is usually visible on the
     bus itself.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//json/jBusPositions
   tags: Buses,Positions
@@ -178,7 +173,7 @@ apis:
     will be listed.\r\n\r\n\r\n\r\nStopID\r\n\r\n7-digit regional ID which can be
     used in various bus-related\r\nmethods. If unavailable, the StopID will be 0 or
     NULL."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//json/jRouteDetails
   tags: Buses,Routes
@@ -198,7 +193,7 @@ apis:
     methods.\r\n\r\n\r\n\r\nLineDescription\r\n\r\nDenotes the route variant\u2019s
     grouping \u2013 lines are a combination of routes which lie in the same corridor
     and which have significant portions of their paths along the same roadways."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//json/jRoutes
   tags: Buses,Routes
@@ -236,7 +231,7 @@ apis:
     of the stop in the sequence of StopTimes.\r\n\r\n\r\n\r\nTime\r\n\r\nScheduled
     departure date and time (Eastern Standard Time) from\r\nthis stop. Will be in
     YYYY-MM-DDTHH:mm:ss format (e.g.:\r\n2014-10-27T13:17:00)."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//json/jRouteSchedule
   tags: Buses,Routes,Schedules
@@ -274,7 +269,7 @@ apis:
     will be listed.\r\n\r\n\r\n\r\nStopID\r\n\r\n7-digit regional ID which can be
     used in various bus-related\r\nmethods. If unavailable, the StopID will be 0 or
     NULL."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//json/jStopSchedule
   tags: Buses,Stops,Schedules
@@ -295,7 +290,7 @@ apis:
     will be listed.\r\n\r\n\r\n\r\nStopID\r\n\r\n7-digit regional ID which can be
     used in various bus-related\r\nmethods. If unavailable, the StopID will be 0 or
     NULL."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//json/jStops
   tags: Buses,Stops
@@ -431,7 +426,7 @@ apis:
 
     Unique identifier for the bus. This is usually visible on the
     bus itself.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//BusPositions
   tags: Buses,Positions
@@ -463,7 +458,7 @@ apis:
     not date-specific; any route variant which stops at this stop on any day will
     be listed.\r\n\r\n\r\nStopID\r\n7-digit regional ID which can be used in various
     bus-related methods. If unavailable, the StopID will be 0 or NULL."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//RouteDetails
   tags: Buses,Routes
@@ -483,7 +478,7 @@ apis:
     methods.\r\n\r\n\r\n\r\n\r\nLineDescription\r\n\r\nDenotes the route variant\u2019s
     grouping \u2013 lines are a combination of routes which lie in the same corridor
     and which have significant portions of their paths along the same roadways."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//Routes
   tags: Buses,Routes
@@ -521,7 +516,7 @@ apis:
     of the stop in the sequence of StopTimes.\r\n\r\n\r\n\r\nTime\r\n\r\nScheduled
     departure date and time (Eastern Standard Time) from\r\nthis stop. Will be in
     YYYY-MM-DDTHH:mm:ss format (e.g.:\r\n2014-10-27T13:17:00)."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//RouteSchedule
   tags: Buses,Stops,Schedules
@@ -559,7 +554,7 @@ apis:
     will be listed.\r\n\r\n\r\n\r\nStopID\r\n\r\n7-digit regional ID which can be
     used in various bus-related\r\nmethods. If unavailable, the StopID will be 0 or
     NULL."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//StopSchedule
   tags: Buses,Stops,Schedules
@@ -580,7 +575,7 @@ apis:
     will be listed.\r\n\r\n\r\n\r\nStopID\r\n\r\n7-digit regional ID which can be
     used in various bus-related\r\nmethods. If unavailable, the StopID will be 0 or
     NULL."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc//Stops
   tags: Buses,Stops
@@ -591,14 +586,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/stops-get-openapi.md
 - name: WMATA Bus Route and Stop Methods
   x-api-slug: wmata-bus-route-and-stop-methods
-  description: The collection of data offered here allows developers to create new
-    and innovative applications for the web or mobile devices. We encourage you to
-    integrate Metro data into your applications and mashups to help get people the
-    information they want about getting around. Use of our APIs and other data is
-    free of charge, you have two options, for new developers who want to try out the
-    WMATA API but are not ready for production, and you can use our demonstration
-    key, without having to register.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  description: Official feed of Metro/WMATA, not monitored 24/7. Report emergencies
+    to Transit Police at (202) 962-2121. Service updates @metrorailinfo & @metrobusinfo.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
   tags: Buses
@@ -621,7 +611,7 @@ apis:
     time.\r\n\r\n\r\n\r\nRoutesAffected\r\n\r\nArray containing routes affected. Routes
     listed are usually\r\nidentical to base route names (i.e.: not 10Av1 or 10Av2,
     but 10A),\r\nbut may differ from what our bus methods return."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//json/BusIncidents
   tags: Transit,Buses,Incidents
@@ -647,7 +637,7 @@ apis:
     this to return something more reasonable like an\r\narray, but until then, use
     code similar to the following:\r\n\r\n\"RD; GR; BL;\".split(/;[\\s]?/).filter(function(fn)
     { return fn\r\n!== ''; })\r\n\r\n\r\n\r\nPassengerDelay\r\n\r\nDeprecated.\r\n\r\n\r\n\r\n\r\nStartLocationFullName\r\n\r\nDeprecated."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//json/Incidents
   tags: Transit,Buses,Incidents
@@ -672,7 +662,7 @@ apis:
     time.\r\n\r\n\r\n\r\nRoutesAffected\r\n\r\nArray containing routes affected. Routes
     listed are usually\r\nidentical to base route names (i.e.: not 10Av1 or 10Av2,
     but 10A),\r\nbut may differ from what our bus methods return."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//BusIncidents
   tags: Transit,Buses,Incidents
@@ -683,86 +673,11 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/busincidents-get-openapi.md
 - name: WMATA Incidents
   x-api-slug: wmata-incidents
-  description: The collection of data offered here allows developers to create new
-    and innovative applications for the web or mobile devices. We encourage you to
-    integrate Metro data into your applications and mashups to help get people the
-    information they want about getting around. Use of our APIs and other data is
-    free of charge, you have two options, for new developers who want to try out the
-    WMATA API but are not ready for production, and you can use our demonstration
-    key, without having to register.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  description: Official feed of Metro/WMATA, not monitored 24/7. Report emergencies
+    to Transit Police at (202) 962-2121. Service updates @metrorailinfo & @metrobusinfo.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc
-  tags: Buses
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/openapi.md
-- name: WMATA Real-Time Bus Predictions XML - Next Buses
-  x-api-slug: wmata-realtime-bus-predictions
-  description: "Description\r\n\r\nReturns next bus arrival times at a stop.\r\n\r\nResponse
-    Elements\r\n\r\n\r\n\r\n\r\nElement\r\n\r\nDescription\r\n\r\n\r\n\r\n\r\n\r\nPredictions\r\n\r\n\r\nArray
-    containing bus predictions (NextBusPrediction).\r\n\r\n\r\n\r\n\r\nStopName\r\n\r\nFull
-    name of the given StopID.\r\n\r\n\r\n\r\n\r\n\r\nNextBusPrediction Elements\r\n\r\n\r\n\r\n\r\n\r\nDirectionNum\r\n\r\nDenotes
-    a binary direction (0 or 1) of the bus. There is no\r\nspecific mapping to direction,
-    but a different value for the same\r\nroute signifies that the buses are traveling
-    in opposite\r\ndirections. Use the DirectionText element to show the actual\r\ndestination
-    of the bus.\r\n\r\n\r\n\r\nDirectionText\r\n\r\nCustomer-friendly description
-    of direction and destination for\r\na bus.\r\n\r\n\r\n\r\nMinutes\r\n\r\nMinutes
-    until bus arrival at this stop. Numeric value.\r\n\r\n\r\n\r\nRouteID\r\n\r\nBase
-    route name as shown on the bus. This can be used in other\r\nbus-related methods.
-    Note that all variants will be shown as their\r\nbase route names (i.e.: 10Av1
-    and 10Av2 will be shown as 10A).\r\n\r\n\r\n\r\nTripID\r\n\r\nTrip identifier.
-    This can be correlated with the data in our\r\nbus schedule information as well
-    as bus positions.\r\n\r\n\r\n\r\nVehicleID\r\n\r\nBus identifier. This can be
-    correlated with results returned\r\nfrom bus positions."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
-  humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//NextBusService.svc//Predictions
-  tags: Transit, Buses,Predictions
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/predictions-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/predictions-get-openapi.md
-- name: WMATA Real-Time Bus Predictions JSON - Next Buses
-  x-api-slug: wmata-realtime-bus-predictions
-  description: "Description\r\n\r\nReturns next bus arrival times at a stop.\r\n\r\nResponse
-    Elements\r\n\r\n\r\n\r\n\r\nElement\r\n\r\nDescription\r\n\r\n\r\n\r\n\r\n\r\nPredictions\r\n\r\n\r\nArray
-    containing bus predictions (NextBusPrediction).\r\n\r\n\r\n\r\n\r\nStopName\r\n\r\nFull
-    name of the given StopID.\r\n\r\n\r\n\r\n\r\n\r\nNextBusPrediction Elements\r\n\r\n\r\n\r\n\r\n\r\nDirectionNum\r\n\r\nDenotes
-    a binary direction (0 or 1) of the bus. There is no\r\nspecific mapping to direction,
-    but a different value for the same\r\nroute signifies that the buses are traveling
-    in opposite\r\ndirections. Use the DirectionText element to show the actual\r\ndestination
-    of the bus.\r\n\r\n\r\n\r\nDirectionText\r\n\r\nCustomer-friendly description
-    of direction and destination for\r\na bus.\r\n\r\n\r\n\r\nMinutes\r\n\r\nMinutes
-    until bus arrival at this stop. Numeric value.\r\n\r\n\r\n\r\nRouteID\r\n\r\nBase
-    route name as shown on the bus. This can be used in other\r\nbus-related methods.
-    Note that all variants will be shown as their\r\nbase route names (i.e.: 10Av1
-    and 10Av2 will be shown as 10A).\r\n\r\n\r\n\r\nTripID\r\n\r\nTrip identifier.
-    This can be correlated with the data in our\r\nbus schedule information as well
-    as bus positions.\r\n\r\n\r\n\r\nVehicleID\r\n\r\nBus identifier. This can be
-    correlated with results returned\r\nfrom bus positions."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
-  humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//NextBusService.svc//json/jPredictions
-  tags: Transit, Buses
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjpredictions-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjpredictions-get-openapi.md
-- name: WMATA Real-Time Bus Predictions
-  x-api-slug: wmata-realtime-bus-predictions
-  description: The collection of data offered here allows developers to create new
-    and innovative applications for the web or mobile devices. We encourage you to
-    integrate Metro data into your applications and mashups to help get people the
-    information they want about getting around. Use of our APIs and other data is
-    free of charge, you have two options, for new developers who want to try out the
-    WMATA API but are not ready for production, and you can use our demonstration
-    key, without having to register.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
-  humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//NextBusService.svc
   tags: Buses
   properties:
   - type: x-openapi-spec
@@ -770,12 +685,38 @@ apis:
 x-common:
 - type: x-base
   url: http://api.wmata.com/
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/wmata
 - type: x-developer
   url: http://developer.wmata.com/
+- type: x-email
+  url: boardofdirectors@wmata.com
+- type: x-email
+  url: metrotransit@wmata.com
+- type: x-email
+  url: adaassist@wmata.com
+- type: x-email
+  url: access@wmata.com
+- type: x-email
+  url: cjachles@wmata.com
+- type: x-email
+  url: writtentestimony@wmata.com
+- type: x-email
+  url: speak@wmata.com
+- type: x-email
+  url: SEBusMove@wmata.com
+- type: x-email
+  url: PARP@wmata.com
+- type: x-email
+  url: raccomments@wmata.com
 - type: x-signup
   url: https://developer.wmata.com/signup/
+- type: x-twitter
+  url: https://twitter.com/wmata
 - type: x-website
   url: http://wmata.com/
+- type: x-website
+  url: http://wmata.com
 include: []
 maintainers:
 - FN: Kin Lane
