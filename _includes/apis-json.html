@@ -10,6 +10,7 @@
 {% assign api_json_openapi_spec = "" %}
 {% assign api_json_postman_collection = "" %}
 {% assign api_json_asyncapi_url = "" %}
+{% assign portal_url = "" %}
 
 {% for api in apis_json.apis %}
 
@@ -18,6 +19,10 @@
     {% assign api_url = api.humanURL %}
 
      {% for property in api.properties %}
+
+       {% if property.type == 'x-developer' %}
+         {% assign portal_url = property.url %}
+       {% endif %}
 
        {% if property.type == 'x-openapi-spec' %}
          {% assign api_json_openapi_spec = property.url %}
