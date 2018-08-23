@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washi
 x-kinRank: "8"
 x-alexaRank: "24927"
 tags: Buses
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/apis.md
 specificationVersion: "0.14"
 apis:
@@ -18,7 +18,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -30,7 +30,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -46,7 +46,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -66,7 +66,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -90,7 +90,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -118,7 +118,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -150,7 +150,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -186,7 +186,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -226,7 +226,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -270,7 +270,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -318,7 +318,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -370,7 +370,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Bus.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonjbuspositions-get-postman.md
@@ -437,7 +437,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonbusincidents-get-postman.md
@@ -449,7 +449,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonbusincidents-get-postman.md
@@ -465,7 +465,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc
-  tags: Transit, Transit, Transportation, General Data API
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/jsonbusincidents-get-postman.md
@@ -535,6 +535,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://vzaar.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://washington.metropolitan.area.transit.authority.stack.network
 - type: x-base
