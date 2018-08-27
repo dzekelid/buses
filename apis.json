@@ -1,57 +1,52 @@
 {
-	"name": "Los Angeles Metro",
-	"x-slug": "los-angeles-metro",
-	"description": "Your train, bike, bus, vanpool, express lanes, commute-saving, LA-loving agency.",
-	"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/11672-metro-developer.jpg",
-	"x-kinRank": "7",
-	"x-alexaRank": "46862",
-	"tags": "Buses",
-	"created": "2018-08-23",
-	"modified": "2018-08-23",
-	"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/buses\/master\/_listings\/los-angeles-metro\/apis.md",
+	"name": "Streadata.io API Gallery - Buses",
+	"description": "This is a repository of buses APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/buses.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://buses.streamdata.gallery/apis.json",
 	"specificationVersion": "0.14",
 	"apis": [
 		{
-			"name": "Los Angeles Metro",
-			"x-api-slug": "los-angeles-metro",
-			"description": "Your train, bike, bus, vanpool, express lanes, commute-saving, LA-loving agency.",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/11672-metro-developer.jpg",
-			"humanURL": "https:\/\/developer.metro.net",
-			"baseURL": "https:\/\/\/",
+			"name": "Washington Metropolitan Area Transit Authority",
+			"x-api-slug": "washington-metropolitan-area-transit-authority",
+			"description": "Official feed of Metro/WMATA, not monitored 24/7. Report emergencies to Transit Police at (202) 962-2121. Service updates @metrorailinfo & @metrobusinfo.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg",
+			"humanURL": "http://wmata.com/",
+			"baseURL": "https://api.wmata.com//TrainPositions",
 			"tags": "Buses",
 			"properties": [
 				{
 					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/buses\/master\/_listings\/los-angeles-metro\/openapi.md"
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Los Angeles Metro",
+			"x-api-slug": "los-angeles-metro",
+			"description": "Your train, bike, bus, vanpool, express lanes, commute-saving, LA-loving agency.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11672-metro-developer.jpg",
+			"humanURL": "https://developer.metro.net",
+			"baseURL": "https:///",
+			"tags": "Buses",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/los-angeles-metro/openapi.md"
 				}
 			]
 		}
 	],
-	"x-common": [
-		{
-			"type": "x-email",
-			"url": "customerrelations@metro.net"
-		},
-		{
-			"type": "x-blog-rss",
-			"url": "http:\/\/developer.metro.net\/feed\/atom\/"
-		},
-		{
-			"type": "x-twitter",
-			"url": "https:\/\/twitter.com\/metrolaalerts"
-		},
-		{
-			"type": "x-website",
-			"url": "https:\/\/developer.metro.net"
-		}
-	],
+	"tags": "Buses",
 	"include": [
-	],
-	"maintainers": [
 		{
-			"FN": "Kin Lane",
-			"x-twitter": "apievangelist",
-			"email": "info@apievangelist.com"
+			"name": "Washington Metropolitan Area Transit Authority",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/washington-metropolitan-area-transit-authority/apis.yaml"
+		},
+		{
+			"name": "Los Angeles Metro",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/buses/master/_listings/los-angeles-metro/apis.yaml"
 		}
 	]
 }
